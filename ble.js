@@ -11,7 +11,7 @@ var myCharacteristic = 0xffb2;   // fill in a characteristic from the service he
 function connect(){
   navigator.bluetooth.requestDevice({
     // filters: [myFilters]       // you can't use filters and acceptAllDevices together
-    optionalServices: [myService],
+    // optionalServices: [myService],
     acceptAllDevices: true
   })
   .then(function(device) {
